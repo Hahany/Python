@@ -1,0 +1,46 @@
+# s = "赵兄托我办点事"
+# print(s[1:3])#注意中间使用的英文冒号":". 而且是左闭右开区间。
+# print(s[1:])
+# print(s[:3])
+# print(s[::-1])# 切片默认步长是+1，所以只能从左往右切，当步长为-1的时候，能从右往左切
+# print(len(s))
+
+# s = "alex is a gay"
+# s1 = s.capitalize()
+# print(s1)
+# s2 = s.lower()
+# print(s2)
+# s3 = s.upper()
+# print(s3)
+# s4 = s1.swapcase()
+# print(s4)
+# s5 = s.casefold() # 作用和lower基本相同，只是支持的语言不同，casefold支持俄文或者德文。
+# s6 = s.title() #把非英文的字符都视为分隔符，把每个单词的首字母大写。
+# print(s6)
+
+#center
+# s = "你是\t好人"
+# s1 = s.center(20,"8");print(s1)
+# print(s)
+# s2 = s.expandtabs()
+# print(s2)
+
+# n = "   _      haha   bfdj   nijqui      "
+# print(n.strip()) # strip() 只是去除字符串两端的空格 同时还有lstrip 和rstrip 分别去掉左边和右边的空格。
+# print(n.replace(" ",""))
+# m = n.split(" ")
+# print(m)
+
+# 几种空的布尔值
+# print(bool(None))
+# print(bool([None]))
+# print(bool([]))
+
+s = "我叫%s,今年%s岁，我讨厌%s"%("CC","14","kun")
+print(s)
+m = "我是{1}，喜欢{0}".format("哈哈","嘿嘿")
+print(m)
+print(s.startswith("我"))
+print(m.count("我"))
+print(m.find("9")) #第一次出现被查字符，返回索引值，不存在的时候返回-1
+print(m.index("我"))
